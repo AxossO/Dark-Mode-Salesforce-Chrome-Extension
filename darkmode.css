@@ -1,0 +1,411 @@
+/* body {
+  color: white;
+}
+.darkmode {
+  background-color: yellow;
+}
+.darkmode .slds-utility-bar,
+.darkmode .slds-table_header-fixed thead th div,
+.darkmode .slds-table--header-fixed thead th div,
+.darkmode .runtime_service_omnichannelOmniWidget,
+.darkmode .oneUtilityBarPanel .slds-utility-panel__body .body_container,
+.darkmode .runtime_service_omnichannelMessage .message-icon_text,
+.darkmode .uiTabBar,
+.darkmode .slds-dropdown_length-with-icon-10,
+.darkmode .slds-dropdown_right,
+.darkmode .oneUtilityBarPanel .headerLink,
+.darkmode .consoleHistory .historyListViewContent,
+.darkmode .oneUtilityBarPanel .headerLink,
+.darkmode .flexipageCard.slds-card,
+.darkmode .navexWorkspace .wsTabset.wsTabBarHidden,
+.darkmode .slds-card,
+.darkmode .slds-grid .slds-page-header__detail-row,
+.darkmode .slds-m-around_medium,
+.darkmode .slds-tabs_card,
+.darkmode .uiTabset--task .tabs__nav,
+.darkmode .riseTransitionEnabled,
+.supportSendEmailQuickAction input.standardField,
+.emailuiPillContainer .pillContainerListItem .slds-pill,
+.uiInput--select .select:not([multiple]),
+.uiInput--select .uiPopupTrigger a,
+.cke_top,
+.navexConsoleTabContainer .slds-tabs--default,
+.forceChatterScroller,
+.forceChatterStyle--default .cuf-feed .cuf-element,
+.supportCompactClumpItem div.cuf-ftcLink,
+.supportCompactClumpItem div.cuf-ftcLink a,
+.slds-modal__container > .slds-modal__content:last-child,
+.supportCompactRecordFeedContainerDesktop .feedActions.qe-feedPanelFeedActions,
+.slds-table,
+.slds-page-header,
+.navexConsoleTabset > .tabsetHeader,
+.navexConsoleTabset > .tabsetHeader,
+.oneUtilityBarPanel .headerLink,
+.oneUtilityBarPanel .headerLink:visited,
+.oneUtilityBarPanel .headerLink:active,
+.oneUtilityBarPanel .headerLink:hover,
+.slds-table_header-fixed_container,
+.slds-table--header-fixed_container {
+  background-color: #1c1c1c !important;
+  color: white !important;
+}
+.slds-table:not(.slds-no-row-hover) tbody tr:hover,
+.slds-table:not(.slds-no-row-hover) tbody tr:focus {
+  opacity: 0.3;
+}
+.offlineStatus .truncatedText .uiOutputText,
+.consoleHistory tr th:nth-child(1) div.forceTreeGridTriggerCell a,
+.forceStyle
+  .flexipage-tabset
+  > .slds-tabs_default
+  > lightning-tab-bar
+  .slds-tabs_default__item,
+.forceStyle.desktop .slds-form .form-element__label,
+.forceStyle.desktop .slds-form .slds-form-element__labelو .slds-truncate,
+.emailMessageBody div iframe,
+.slds-truncate,
+.forceChatterFeedAuxBodyEmailMessage .inFeed .emailMessageBody,
+.forceChatterFeedAuxBodyEmailMessage .inFeed .emailMessageBody,
+.slds-accordion__summary-content,
+.slds-form-element__static,
+.slds-form-element_stacked .slds-form-element__label,
+.forceChatterFeedSorter .uiPopupTrigger a,
+.cke_editable {
+  color: white !important;
+}
+.slds-dropdown__item > a:hover,
+.slds-dropdown__item > a:focus,
+.slds-tree__item:hover,
+.flexipageRecentItems .flex-item.forceListRecord.light .body:hover,
+.slds-split-view__toggle-button,
+.slds-listbox_vertical .slds-listbox__option:hover,
+.active,
+.fix-slds-input_faux[lwc-4kb6kaqheak],
+.slds-rich-text-editor__textarea:last-child .slds-rich-text-area__content,
+.slds-input,
+.slds-textarea,
+.slds-modal__header,
+.cke_wysiwyg_frame,
+.cke_reset,
+#cke_editor .cke_top,
+div:has(> iframe[title="Email Body"]) {
+  background-color: #343434 !important;
+}
+.flexipageRecentItems .flex-item.forceListRecord.light .body {
+  background-color: #1c1c1c;
+  color: white !important;
+  border-bottom: 1px solid #0064ff;
+}
+
+.forceListRecord .itemTitle div,
+.runtime_service_omnichannelStatus .truncatedText,
+.uiTabItem a span,
+.emailuiPillContainer .slds-pill__label,
+.forcePageBlockItemView .slds-form-element__static,
+.uiOutputTextArea a,
+.slds-active,
+.slds-form-element__static a,
+.cke_597,
+.cke_683 {
+  color: yellow !important;
+}
+.slds-grid slds-page-header__detail-row {
+  background-color: #1c1c1c !important;
+  color: white !important;
+  border-top: 2px solid white;
+}
+.cke_editable {
+  background-color: #222222 !important;
+  color: white !important;
+}
+.cke_596,
+.cke_595,
+.cke_594,
+.cke_593,
+.cke_592,
+.cke_591,
+.cke_663,
+.cke_664,
+.cke_665,
+.cke_666,
+.cke_667,
+.cke_668,
+.cke_669,
+.cke_670,
+.cke_671,
+.cke_672,
+.cke_673,
+.cke_674,
+.cke_675,
+.cke_676,
+.cke_677,
+.cke_678,
+.cke_679,
+.cke_680,
+.cke_681,
+.cke_682 {
+  display: none;
+} */
+
+/* Main */
+.darkmode .slds-utility-bar,
+.darkmode .slds-table_header-fixed thead th div,
+.darkmode .slds-table--header-fixed thead th div,
+.darkmode .runtime_service_omnichannelOmniWidget,
+.darkmode .oneUtilityBarPanel .slds-utility-panel__body .body_container,
+.darkmode .runtime_service_omnichannelMessage .message-icon_text,
+.darkmode .uiTabBar,
+.darkmode .slds-dropdown_length-with-icon-10,
+.darkmode .slds-dropdown_right,
+.darkmode .oneUtilityBarPanel .headerLink,
+.darkmode .consoleHistory .historyListViewContent,
+.darkmode .oneUtilityBarPanel .headerLink,
+.darkmode .flexipageCard.slds-card,
+.darkmode .navexWorkspace .wsTabset.wsTabBarHidden,
+.darkmode .slds-card,
+.darkmode .slds-grid .slds-page-header__detail-row,
+.darkmode .slds-m-around_medium,
+.darkmode .slds-tabs_card,
+.darkmode .uiTabset--task .tabs__nav,
+.darkmode .riseTransitionEnabled,
+.darkmode .supportSendEmailQuickAction input.standardField,
+.darkmode .emailuiPillContainer .pillContainerListItem .slds-pill,
+.darkmode .uiInput--select .select:not([multiple]),
+.darkmode .uiInput--select .uiPopupTrigger a,
+.darkmode .cke_top,
+.darkmode .navexConsoleTabContainer .slds-tabs--default,
+.darkmode .forceChatterScroller,
+.darkmode .forceChatterStyle--default .cuf-feed .cuf-element,
+.darkmode .supportCompactClumpItem div.cuf-ftcLink,
+.darkmode .supportCompactClumpItem div.cuf-ftcLink a,
+.darkmode .slds-modal__container > .slds-modal__content:last-child,
+.darkmode
+  .supportCompactRecordFeedContainerDesktop
+  .feedActions.qe-feedPanelFeedActions,
+.darkmode .slds-table,
+.darkmode .slds-page-header,
+.darkmode .navexConsoleTabset > .tabsetHeader,
+.darkmode .navexConsoleTabset > .tabsetHeader,
+.darkmode .oneUtilityBarPanel .headerLink,
+.darkmode .oneUtilityBarPanel .headerLink:visited,
+.darkmode .oneUtilityBarPanel .headerLink:active,
+.darkmode .oneUtilityBarPanel .headerLink:hover,
+.darkmode .slds-table_header-fixed_container,
+.darkmode .slds-table--header-fixed_container,
+.darkmode .forceRelatedListPreview.SMALL .uiAbstractList .forceRecordLayout,
+.darkmode
+  .forceKnowledgeArticleSearchDesktop
+  .kbResultStencil.forceRecordLayout,
+.darkmode .forceSearchSearchPageDesktop .navContainer,
+.darkmode .slds-nav-vertical__item.slds-is-active .slds-nav-vertical__action,
+.darkmode .runtime_sales_activitiesActivityTimelineFixedLayout,
+.darkmode .forceStyle .flexipage-tabset .activityPanel.slds-card-wrapper,
+.darkmode .slds-region__pinned-top,
+.darkmode .forceChatterUserPreviewStencil .profilePicPrimaryFieldWrapper,
+.darkmode .flexipageBaseRecordHomeTemplateDesktop .region-sidebar-right,
+.darkmode .forceHighlightsStencilDesktop .slds-page-header__detail-row,
+.darkmode .forceVirtualRecordsComparison .fieldConflicts,
+.darkmode .onesetupSetupFlow > .content,
+/* .darkmode .oneUtilityBarItem .utilityBarButton, */
+.darkmode .onesetupSetupFlow .slds-spinner_container,
+.darkmode .forceMultiAddUsingLVM .multiAddWrapper .headerRegion {
+  background-color: #1c1c1c !important;
+  color: white !important;
+}
+
+/* BG 343434 */
+
+.darkmode .slds-dropdown__item > a:hover,
+.darkmode .slds-dropdown__item > a:focus,
+.darkmode .slds-tree__item:hover,
+.darkmode .flexipageRecentItems .flex-item.forceListRecord.light .body:hover,
+.darkmode .slds-split-view__toggle-button,
+.darkmode .slds-listbox_vertical .slds-listbox__option:hover,
+.darkmode .active,
+.darkmode .fix-slds-input_faux[lwc-4kb6kaqheak],
+.darkmode
+  .slds-rich-text-editor__textarea:last-child
+  .slds-rich-text-area__content,
+.darkmode .slds-input,
+.darkmode .slds-textarea,
+.darkmode .slds-modal__header,
+.darkmode .cke_wysiwyg_frame,
+.darkmode .cke_reset,
+.darkmode #cke_editor .cke_top,
+.darkmode div:has(> iframe[title="Email Body"]),
+.darkmode
+  .forceKnowledgeArticleSearchDesktop
+  .forceSearchInputDesktop
+  .inputWrapper,
+.darkmode .slds-table:not(.slds-no-row-hover) tbody tr:hover > td,
+.darkmode .slds-table:not(.slds-no-row-hover) tbody tr:hover > th,
+.darkmode .slds-rich-text-editor__textarea .ql-editor,
+.darkmode .slds-rich-text-editor.slds-has-error .slds-form-element__help,
+.darkmode .slds-section__title-action,
+.darkmode [lwc-k3u3t7jeg5-host]:hover,
+.darkmode .focused[lwc-k3u3t7jeg5],
+.darkmode
+  .forceRecordsComparisonTemplate.fieldConflictItem
+  .fieldValue
+  input[type="radio"]:checked
+  + .field,
+.darkmode .uiPill--default.pill,
+.darkmode
+  .forceSearchInputLookupDesktop
+  .uiPillContainer.focused
+  .showMore.invisible
+  + ul {
+  background-color: #343434 !important;
+}
+
+/* White */
+.darkmode .offlineStatus .truncatedText .uiOutputText,
+.darkmode .consoleHistory tr th:nth-child(1) div.forceTreeGridTriggerCell a,
+.darkmode
+  .forceStyle
+  .flexipage-tabset
+  > .slds-tabs_default
+  > lightning-tab-bar
+  .slds-tabs_default__item,
+.darkmode .forceStyle.desktop .slds-form .form-element__label,
+.darkmode
+  .forceStyle.desktop
+  .slds-form
+  .slds-form-element__labelو
+  .slds-truncate,
+.darkmode .emailMessageBody div iframe,
+.darkmode .slds-truncate,
+.darkmode .forceChatterFeedAuxBodyEmailMessage .inFeed .emailMessageBody,
+.darkmode .forceChatterFeedAuxBodyEmailMessage .inFeed .emailMessageBody,
+.darkmode .slds-accordion__summary-content,
+.darkmode .slds-form-element__static,
+.darkmode .slds-form-element_stacked .slds-form-element__label,
+.darkmode .forceChatterFeedSorter .uiPopupTrigger a,
+.darkmode .cke_editable,
+.darkmode .supportCompactFeedItemRecordSummaryContent .cuf-rsFieldValue,
+table tbody tr span,
+.darkmode .slds-rich-text-editor__textarea .ql-editor,
+.darkmode .slds-dropdown__item > a,
+.darkmode a.slds-button,
+.darkmode .supportCompactFeedItemHeader .entityLinkHover .uiOutputText,
+.darkmode .forceSearchAssistantDialog .saInput input,
+.darkmode mark {
+  color: white !important;
+}
+
+/* Yellow */
+.darkmode .forceListRecord .itemTitle div,
+.darkmode .runtime_service_omnichannelStatus .truncatedText,
+.darkmode .uiTabItem a span,
+.darkmode .emailuiPillContainer .slds-pill__label,
+.darkmode .forcePageBlockItemView .slds-form-element__static,
+.darkmode .uiOutputTextArea a,
+.darkmode .slds-active,
+.darkmode .slds-form-element__static a,
+.darkmode .cke_597,
+.darkmode .cke_683,
+.darkmode .slds-table:not(.slds-no-row-hover) tbody tr:hover > th span a,
+.darkmode .forceChatterFeedAuxBodyText.showMore a,
+.darkmode .runtime_service_omnichannelAbstractPushedRequest .OmniTimer,
+.darkmode .forceSearchInputLookupDesktop .pillText {
+  color: yellow !important;
+}
+
+.darkmode .cke_596,
+.darkmode .cke_595,
+.darkmode .cke_594,
+.darkmode .cke_593,
+.darkmode .cke_592,
+.darkmode .cke_591,
+.darkmode .cke_663,
+.darkmode .cke_664,
+.darkmode .cke_665,
+.darkmode .cke_666,
+.darkmode .cke_667,
+.darkmode .cke_668,
+.darkmode .cke_669,
+.darkmode .cke_670,
+.darkmode .cke_671,
+.darkmode .cke_672,
+.darkmode .cke_673,
+.darkmode .cke_674,
+.darkmode .cke_675,
+.darkmode .cke_676,
+.darkmode .cke_677,
+.darkmode .cke_678,
+.darkmode .cke_679,
+.darkmode .cke_680,
+.darkmode .cke_681,
+.darkmode .cke_682 {
+  display: none;
+}
+
+/* One 2 One */
+.darkmode .slds-grid slds-page-header__detail-row {
+  background-color: #1c1c1c !important;
+  color: white !important;
+  border-top: 2px solid white;
+}
+.darkmode .cke_editable {
+  background-color: #222222 !important;
+  color: white !important;
+}
+.darkmode .flexipageRecentItems .flex-item.forceListRecord.light .body {
+  background-color: #1c1c1c;
+  color: white !important;
+  border-bottom: 1px solid #0064ff;
+}
+.darkmode .forceVirtualAutocompleteMenuOption.highlighted a,
+.darkmode
+  .runtime_sales_activitiesActivityTimelineFixedStencil
+  .hoverable:hover {
+  background-color: rgb(68, 68, 68) !important;
+}
+.darkmode
+  .runtime_sales_activitiesActivityTimelineFixedLayout
+  .slds-button-section__buttons {
+  background-color: rgb(68, 68, 68) !important;
+  border-radius: 3px;
+}
+
+.darkmode .slds-path__nav .slds-is-current:first-child,
+.darkmode
+  .runtime_sales_pathassistantPathAssistant
+  .slds-path__track
+  .slds-button:hover {
+  border-color: yellow !important;
+}
+.darkmode .slds-path__nav .slds-is-active .slds-path__link,
+.darkmode .forceStyle .slds-form .slds-form-element__label {
+  color: white !important;
+}
+
+.darkmode .slds-path__nav .slds-is-incomplete:before,
+.darkmode .slds-path__nav .slds-is-incomplete:after,
+.darkmode .slds-path__nav .slds-is-current:first-child:before,
+.darkmode .slds-path__nav .slds-is-current:first-child:after,
+.darkmode .slds-path__nav .slds-is-current,
+.darkmode .slds-path__nav .slds-is-incomplete {
+  background: #282828 !important;
+}
+.darkmode .slds-path__nav .slds-is-active:first-child:before,
+.darkmode .slds-path__nav .slds-is-active:first-child:after,
+.darkmode .slds-path__nav .slds-is-active:before,
+.darkmode .slds-path__nav .slds-is-active:after,
+.darkmode .slds-path__nav .slds-is-active {
+  background: yellow !important;
+}
+.darkmode .slds-path__nav .slds-is-incomplete .slds-path__link,
+.darkmode .slds-path__nav .slds-is-current .slds-path__link {
+  color: #777777 !important;
+}
+.darkmode .uiPanel {
+  border: 1px solid #282828;
+}
+/* .darkmode .slds-path__nav .slds-is-current:first-child:before,
+.darkmode .slds-path__nav .slds-is-current:first-child:after {
+}
+.darkmode .slds-path__nav .slds-is-current:before,
+.slds-path__nav .slds-is-current:after {
+  
+} */
