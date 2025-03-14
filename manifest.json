@@ -1,11 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "Salesforce Dark Mode ",
+  "name": "Salesforce Dark Mode",
   "version": "0.1",
   "description": "Applies dark mode",
   "permissions": ["activeTab", "storage"],
+  "host_permissions": ["https://shahidmbc.lightning.force.com/*"],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": "background.js"
   },
   "action": {
     "default_popup": "popup.html"

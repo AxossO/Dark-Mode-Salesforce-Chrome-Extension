@@ -402,10 +402,22 @@ table tbody tr span,
 .darkmode .uiPanel {
   border: 1px solid #282828;
 }
+.darkmode .slds-datepicker__filter.slds-grid,
+.darkmode .slds-datepicker.slds-dropdown.slds-dropdown_left {
+  color: white !important;
+  background-color: #282828 !important;
+}
 /* .darkmode .slds-path__nav .slds-is-current:first-child:before,
 .darkmode .slds-path__nav .slds-is-current:first-child:after {
 }
 .darkmode .slds-path__nav .slds-is-current:before,
 .slds-path__nav .slds-is-current:after {
   
+} */
+/* .labell {
+  text-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
 } */
