@@ -12,17 +12,3 @@ chrome.storage.onChanged.addListener(function (changes, namespace) {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const darkModeToggle = document.getElementById("darkModeToggle");
-
-  // darkModeToggle.addEventListener("change", function () {
-  //   chrome.storage.sync.set({ darkModeEnabled: darkModeToggle.checked });
-  // });
-
-  darkModeToggle.addEventListener("change", function () {
-    const darkModeEnabled = darkModeToggle.checked;
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-      chrome.tabs.sendMessage(tabs[0].id, { darkModeEnabled });
-    });
-  });
-});

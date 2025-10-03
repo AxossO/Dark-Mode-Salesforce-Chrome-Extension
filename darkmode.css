@@ -208,11 +208,11 @@ div:has(> iframe[title="Email Body"]) {
 .darkmode .onesetupSetupFlow > .content,
 /* .darkmode .oneUtilityBarItem .utilityBarButton, */
 .darkmode .onesetupSetupFlow .slds-spinner_container,
-.darkmode .forceMultiAddUsingLVM .multiAddWrapper .headerRegion {
+.darkmode .forceMultiAddUsingLVM .multiAddWrapper .headerRegion, .darkmode .slds-wrap .slds-rich-text-area__content, .darkmode .slds-modal__footer ,.darkmode .runtime_service_liveagentChatBody .slds-rich-text-area__content,.darkmode .forceSearchInputLookupDesktop .lookup__list.visible {
   background-color: #1c1c1c !important;
   color: white !important;
 }
-
+/* slds-wrap slds-rich-text-area__content  */
 /* BG 343434 */
 
 .darkmode .slds-dropdown__item > a:hover,
@@ -276,7 +276,6 @@ div:has(> iframe[title="Email Body"]) {
 .darkmode .emailMessageBody div iframe,
 .darkmode .slds-truncate,
 .darkmode .forceChatterFeedAuxBodyEmailMessage .inFeed .emailMessageBody,
-.darkmode .forceChatterFeedAuxBodyEmailMessage .inFeed .emailMessageBody,
 .darkmode .slds-accordion__summary-content,
 .darkmode .slds-form-element__static,
 .darkmode .slds-form-element_stacked .slds-form-element__label,
@@ -289,7 +288,8 @@ table tbody tr span,
 .darkmode a.slds-button,
 .darkmode .supportCompactFeedItemHeader .entityLinkHover .uiOutputText,
 .darkmode .forceSearchAssistantDialog .saInput input,
-.darkmode mark {
+.darkmode mark,
+.whiteyy {
   color: white !important;
 }
 
@@ -376,7 +376,8 @@ table tbody tr span,
   border-color: yellow !important;
 }
 .darkmode .slds-path__nav .slds-is-active .slds-path__link,
-.darkmode .forceStyle .slds-form .slds-form-element__label {
+.darkmode .forceStyle .slds-form .slds-form-element__label,
+.darkmode emailuiFrame > span {
   color: white !important;
 }
 

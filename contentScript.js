@@ -1,140 +1,50 @@
-// chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
-//   // console.log(message);
-//   // console.log(sender);
-//   // console.log(sendResponse);
-//   if (message.darkModeEnabled) {
-//     document.body.classList.add("darkmode");
-//     console.log("DarkMode added hehe <3");
-//     function changeColor() {
-//       var iframes = document.querySelectorAll("#emailuiFrame");
-//       iframes.forEach(function (iframe) {
-//         var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-//         var content = iframeDoc.body;
-//         // if (content.table.tbody.tr.td) {
-//         //   content.style.cssText = "background-color: #1c1c1c !important";
-//         // } else {
-//         //   null;
-//         // }
-//         if (content.querySelector("table")) {
-//           const table = content.querySelector("table");
-//           // console.log(table);
-//           table.style.color = "black";
-//           table.style.cssText = "background-color: #1c1c1c !important";
-//         } else {
-//           content.style.color = "white";
-//         }
-//       });
-//     }
-//     const clicker = document.querySelectorAll(".cuf-feedItemHeader.cuf-media");
-//     clicker.forEach((e) => {
-//       e.addEventListener("click", () => {
-//         // console.log(e);
-//         changeColor();
-//       });
-//     });
+function applyDarkMode() {
+  document.body.classList.add("darkmode");
 
-//     const targetNode = document.body;
-//     const config = {
-//       childList: true,
-//       subtree: true,
-//     };
-//     const callback = (mutationsList, observer) => {
-//       for (const mutation of mutationsList) {
-//         if (mutation.type === "childList") {
-//           mutation.addedNodes.forEach((node) => {
-//             if (node.nodeType === 1) {
-//               const matches = node.querySelectorAll(
-//                 ".cuf-feedItemHeader.cuf-media"
-//               );
-//               matches.forEach((match) => {
-//                 // console.log("node: SECOND", match);
-//                 match.addEventListener("click", () => {
-//                   changeColor();
-//                 });
-//               });
-//             }
-//           });
-//         }
-//       }
-//     };
-//     const observer = new MutationObserver(callback);
-//     observer.observe(targetNode, config);
-//   } else if (!message.darkModeEnabled) {
-//     let addedElements = document.querySelectorAll(".darkmode");
-//     addedElements.forEach(function (element) {
-//       if (element.classList.contains("darkmode")) {
-//         element.classList.remove("darkmode");
-//         console.log("removed DarkMode -_-");
-//       }
-//     });
-//     //   }
-//   }
-// });
-
-chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
-  // console.log(message);
-  // console.log(sender);
-  // console.log(sendResponse);
-  if (message.hasOwnProperty("darkModeEnabled")) {
-    if (message.darkModeEnabled) {
-      document.body.classList.add("darkmode");
-      function changeColor() {
-        var iframes = document.querySelectorAll("#emailuiFrame");
-        iframes.forEach(function (iframe) {
-          var iframeDoc =
-            iframe.contentDocument || iframe.contentWindow.document;
-          var content = iframeDoc.body;
-          // if (content.table.tbody.tr.td) {
-          //   content.style.cssText = "background-color: #1c1c1c !important";
-          // } else {
-          //   null;
-          // }
-          if (content.querySelector("table")) {
-            const table = content.querySelector("table");
-            table.style.color = "black";
-            table.style.cssText = "background-color: #1c1c1c !important";
-          } else {
-            content.style.color = "white";
-          }
-        });
-      }
-      const clicker = document.querySelectorAll(
-        ".cuf-feedItemHeader.cuf-media"
-      );
-      clicker.forEach((e) => {
-        e.addEventListener("click", changeColor);
-      });
-
-      const targetNode = document.body;
-      const config = {
-        childList: true,
-        subtree: true,
-      };
-      const callback = (mutationsList, observer) => {
-        for (const mutation of mutationsList) {
-          if (mutation.type === "childList") {
-            mutation.addedNodes.forEach((node) => {
-              if (node.nodeType === 1) {
-                const matches = node.querySelectorAll(
-                  ".cuf-feedItemHeader.cuf-media"
-                );
-                matches.forEach((match) => {
-                  // console.log("node: SECOND", match);
-                  match.addEventListener("click", changeColor);
-                });
-              }
-            });
-          }
-        }
-      };
-      const observer = new MutationObserver(callback);
-      observer.observe(targetNode, config);
-    } else {
-      let addedElements = document.querySelectorAll(".darkmode");
-      addedElements.forEach(function (element) {
-        element.classList.remove("darkmode");
-        console.log("removed DarkMode -_-");
-      });
+  const iframes = document.querySelectorAll("iframe#emailuiFrame");
+  iframes.forEach((iframe) => {
+    try {
+      const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+      if (!iframeDoc) return;
+      if (!iframeDoc.body || iframeDoc.querySelector("table")) return;
+      iframeDoc.body.classList.add("whiteyy");
+      const cssLink = iframeDoc.createElement("link");
+      cssLink.href = chrome.runtime.getURL("darkmode.css");
+      cssLink.rel = "stylesheet";
+      cssLink.type = "text/css";
+      iframeDoc.head.appendChild(cssLink);
+    } catch (err) {
+      console.warn("Could not apply dark mode to iframe:", err);
     }
+  });
+}
+
+function removeDarkMode() {
+  document.body.classList.remove("darkmode");
+}
+
+// Listen for messages from background
+chrome.runtime.onMessage.addListener((message) => {
+  if (message.darkModeEnabled !== undefined) {
+    if (message.darkModeEnabled) {
+      applyDarkMode();
+    } else {
+      removeDarkMode();
+    }
+  }
+});
+
+// Observe DOM changes (for dynamically loaded Salesforce UI parts)
+const observer = new MutationObserver(() => {
+  if (document.body.classList.contains("darkmode")) {
+    applyDarkMode();
+  }
+});
+observer.observe(document.body, { childList: true, subtree: true });
+
+// Ensure initial state is applied when page loads
+chrome.storage.sync.get("darkModeEnabled", (data) => {
+  if (data.darkModeEnabled) {
+    applyDarkMode();
   }
 });

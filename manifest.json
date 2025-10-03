@@ -3,10 +3,10 @@
   "name": "Salesforce Dark Mode",
   "version": "0.1",
   "description": "Applies dark mode",
-  "permissions": ["activeTab", "storage"],
+  "permissions": ["storage", "activeTab", "scripting"],
   "host_permissions": ["https://shahidmbc.lightning.force.com/*"],
   "background": {
-    "scripts": "background.js"
+    "service_worker": "background.js"
   },
   "action": {
     "default_popup": "popup.html"
@@ -16,6 +16,12 @@
       "matches": ["https://shahidmbc.lightning.force.com/lightning/*"],
       "js": ["contentScript.js"],
       "css": ["darkmode.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["darkmode.css"],
+      "matches": ["<all_urls>"]
     }
   ]
 }
