@@ -1,152 +1,3 @@
-/* body {
-  color: white;
-}
-.darkmode {
-  background-color: yellow;
-}
-.darkmode .slds-utility-bar,
-.darkmode .slds-table_header-fixed thead th div,
-.darkmode .slds-table--header-fixed thead th div,
-.darkmode .runtime_service_omnichannelOmniWidget,
-.darkmode .oneUtilityBarPanel .slds-utility-panel__body .body_container,
-.darkmode .runtime_service_omnichannelMessage .message-icon_text,
-.darkmode .uiTabBar,
-.darkmode .slds-dropdown_length-with-icon-10,
-.darkmode .slds-dropdown_right,
-.darkmode .oneUtilityBarPanel .headerLink,
-.darkmode .consoleHistory .historyListViewContent,
-.darkmode .oneUtilityBarPanel .headerLink,
-.darkmode .flexipageCard.slds-card,
-.darkmode .navexWorkspace .wsTabset.wsTabBarHidden,
-.darkmode .slds-card,
-.darkmode .slds-grid .slds-page-header__detail-row,
-.darkmode .slds-m-around_medium,
-.darkmode .slds-tabs_card,
-.darkmode .uiTabset--task .tabs__nav,
-.darkmode .riseTransitionEnabled,
-.supportSendEmailQuickAction input.standardField,
-.emailuiPillContainer .pillContainerListItem .slds-pill,
-.uiInput--select .select:not([multiple]),
-.uiInput--select .uiPopupTrigger a,
-.cke_top,
-.navexConsoleTabContainer .slds-tabs--default,
-.forceChatterScroller,
-.forceChatterStyle--default .cuf-feed .cuf-element,
-.supportCompactClumpItem div.cuf-ftcLink,
-.supportCompactClumpItem div.cuf-ftcLink a,
-.slds-modal__container > .slds-modal__content:last-child,
-.supportCompactRecordFeedContainerDesktop .feedActions.qe-feedPanelFeedActions,
-.slds-table,
-.slds-page-header,
-.navexConsoleTabset > .tabsetHeader,
-.navexConsoleTabset > .tabsetHeader,
-.oneUtilityBarPanel .headerLink,
-.oneUtilityBarPanel .headerLink:visited,
-.oneUtilityBarPanel .headerLink:active,
-.oneUtilityBarPanel .headerLink:hover,
-.slds-table_header-fixed_container,
-.slds-table--header-fixed_container {
-  background-color: #1c1c1c !important;
-  color: white !important;
-}
-.slds-table:not(.slds-no-row-hover) tbody tr:hover,
-.slds-table:not(.slds-no-row-hover) tbody tr:focus {
-  opacity: 0.3;
-}
-.offlineStatus .truncatedText .uiOutputText,
-.consoleHistory tr th:nth-child(1) div.forceTreeGridTriggerCell a,
-.forceStyle
-  .flexipage-tabset
-  > .slds-tabs_default
-  > lightning-tab-bar
-  .slds-tabs_default__item,
-.forceStyle.desktop .slds-form .form-element__label,
-.forceStyle.desktop .slds-form .slds-form-element__labelو .slds-truncate,
-.emailMessageBody div iframe,
-.slds-truncate,
-.forceChatterFeedAuxBodyEmailMessage .inFeed .emailMessageBody,
-.forceChatterFeedAuxBodyEmailMessage .inFeed .emailMessageBody,
-.slds-accordion__summary-content,
-.slds-form-element__static,
-.slds-form-element_stacked .slds-form-element__label,
-.forceChatterFeedSorter .uiPopupTrigger a,
-.cke_editable {
-  color: white !important;
-}
-.slds-dropdown__item > a:hover,
-.slds-dropdown__item > a:focus,
-.slds-tree__item:hover,
-.flexipageRecentItems .flex-item.forceListRecord.light .body:hover,
-.slds-split-view__toggle-button,
-.slds-listbox_vertical .slds-listbox__option:hover,
-.active,
-.fix-slds-input_faux[lwc-4kb6kaqheak],
-.slds-rich-text-editor__textarea:last-child .slds-rich-text-area__content,
-.slds-input,
-.slds-textarea,
-.slds-modal__header,
-.cke_wysiwyg_frame,
-.cke_reset,
-#cke_editor .cke_top,
-div:has(> iframe[title="Email Body"]) {
-  background-color: #343434 !important;
-}
-.flexipageRecentItems .flex-item.forceListRecord.light .body {
-  background-color: #1c1c1c;
-  color: white !important;
-  border-bottom: 1px solid #0064ff;
-}
-
-.forceListRecord .itemTitle div,
-.runtime_service_omnichannelStatus .truncatedText,
-.uiTabItem a span,
-.emailuiPillContainer .slds-pill__label,
-.forcePageBlockItemView .slds-form-element__static,
-.uiOutputTextArea a,
-.slds-active,
-.slds-form-element__static a,
-.cke_597,
-.cke_683 {
-  color: yellow !important;
-}
-.slds-grid slds-page-header__detail-row {
-  background-color: #1c1c1c !important;
-  color: white !important;
-  border-top: 2px solid white;
-}
-.cke_editable {
-  background-color: #222222 !important;
-  color: white !important;
-}
-.cke_596,
-.cke_595,
-.cke_594,
-.cke_593,
-.cke_592,
-.cke_591,
-.cke_663,
-.cke_664,
-.cke_665,
-.cke_666,
-.cke_667,
-.cke_668,
-.cke_669,
-.cke_670,
-.cke_671,
-.cke_672,
-.cke_673,
-.cke_674,
-.cke_675,
-.cke_676,
-.cke_677,
-.cke_678,
-.cke_679,
-.cke_680,
-.cke_681,
-.cke_682 {
-  display: none;
-} */
-
 /* Main */
 .darkmode .slds-utility-bar,
 .darkmode .slds-table_header-fixed thead th div,
@@ -206,15 +57,21 @@ div:has(> iframe[title="Email Body"]) {
 .darkmode .forceHighlightsStencilDesktop .slds-page-header__detail-row,
 .darkmode .forceVirtualRecordsComparison .fieldConflicts,
 .darkmode .onesetupSetupFlow > .content,
+.darkmode .slds-panel__header,.darkmode .panelBodyWrapper,
+.darkmode .panelBody,
+.darkmode .slds-filters__item,
 /* .darkmode .oneUtilityBarItem .utilityBarButton, */
-.darkmode .onesetupSetupFlow .slds-spinner_container,
-.darkmode .forceMultiAddUsingLVM .multiAddWrapper .headerRegion, .darkmode .slds-wrap .slds-rich-text-area__content, .darkmode .slds-modal__footer ,.darkmode .runtime_service_liveagentChatBody .slds-rich-text-area__content,.darkmode .forceSearchInputLookupDesktop .lookup__list.visible {
+.darkmode .onesetupSetupFlow .slds-spinner_container,.darkmode .modal-body,.darkmode .slds-popover__footer,
+.darkmode .slds-modal__header,.darkmode .runtime_service_liveagentConversationLog,.darkmode .slds-textarea,.darkmode .slds-popover,.darkmode .quicktext-message-preview textarea,
+.darkmode .forceMultiAddUsingLVM .multiAddWrapper .headerRegion, .darkmode .slds-wrap .slds-rich-text-area__content, .darkmode .runtime_service_liveagentChatBody .slds-rich-text-area__content,.darkmode .forceSearchInputLookupDesktop .lookup__list.visible {
   background-color: #1c1c1c !important;
   color: white !important;
 }
 /* slds-wrap slds-rich-text-area__content  */
 /* BG 343434 */
-
+.darkmode .recommendations-panel {
+  display: none;
+}
 .darkmode .slds-dropdown__item > a:hover,
 .darkmode .slds-dropdown__item > a:focus,
 .darkmode .slds-tree__item:hover,
@@ -227,8 +84,6 @@ div:has(> iframe[title="Email Body"]) {
   .slds-rich-text-editor__textarea:last-child
   .slds-rich-text-area__content,
 .darkmode .slds-input,
-.darkmode .slds-textarea,
-.darkmode .slds-modal__header,
 .darkmode .cke_wysiwyg_frame,
 .darkmode .cke_reset,
 .darkmode #cke_editor .cke_top,
@@ -254,7 +109,10 @@ div:has(> iframe[title="Email Body"]) {
   .forceSearchInputLookupDesktop
   .uiPillContainer.focused
   .showMore.invisible
-  + ul {
+  + ul,
+.darkmode .slds-cell-fixed,
+.darkmode .slds-cell-fixed:hover,
+.darkmode .slds-modal__footer {
   background-color: #343434 !important;
 }
 
@@ -282,14 +140,15 @@ div:has(> iframe[title="Email Body"]) {
 .darkmode .forceChatterFeedSorter .uiPopupTrigger a,
 .darkmode .cke_editable,
 .darkmode .supportCompactFeedItemRecordSummaryContent .cuf-rsFieldValue,
-table tbody tr span,
+.darkmode table tbody tr span,
 .darkmode .slds-rich-text-editor__textarea .ql-editor,
 .darkmode .slds-dropdown__item > a,
 .darkmode a.slds-button,
 .darkmode .supportCompactFeedItemHeader .entityLinkHover .uiOutputText,
 .darkmode .forceSearchAssistantDialog .saInput input,
 .darkmode mark,
-.whiteyy {
+.whiteyy,
+.darkmode .slds-page-header__title {
   color: white !important;
 }
 
@@ -307,7 +166,11 @@ table tbody tr span,
 .darkmode .slds-table:not(.slds-no-row-hover) tbody tr:hover > th span a,
 .darkmode .forceChatterFeedAuxBodyText.showMore a,
 .darkmode .runtime_service_omnichannelAbstractPushedRequest .OmniTimer,
-.darkmode .forceSearchInputLookupDesktop .pillText {
+.darkmode .forceSearchInputLookupDesktop .pillText,
+.darkmode .addFilter,
+.darkmode .removeAllFiltersButton,
+.darkmode .addFilterLogic,
+.darkmode .slds-chat-message__meta {
   color: yellow !important;
 }
 
@@ -339,7 +202,7 @@ table tbody tr span,
 .darkmode .cke_682 {
   display: none;
 }
-
+/* slds-panel__header */
 /* One 2 One */
 .darkmode .slds-grid slds-page-header__detail-row {
   background-color: #1c1c1c !important;

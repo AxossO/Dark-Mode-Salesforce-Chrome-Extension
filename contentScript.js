@@ -23,18 +23,6 @@ function removeDarkMode() {
   document.body.classList.remove("darkmode");
 }
 
-// Listen for messages from background
-chrome.runtime.onMessage.addListener((message) => {
-  if (message.darkModeEnabled !== undefined) {
-    if (message.darkModeEnabled) {
-      applyDarkMode();
-    } else {
-      removeDarkMode();
-    }
-  }
-});
-
-// Observe DOM changes (for dynamically loaded Salesforce UI parts)
 const observer = new MutationObserver(() => {
   if (document.body.classList.contains("darkmode")) {
     applyDarkMode();
@@ -42,9 +30,20 @@ const observer = new MutationObserver(() => {
 });
 observer.observe(document.body, { childList: true, subtree: true });
 
-// Ensure initial state is applied when page loads
+// Listen for messages from background
+chrome.runtime.onMessage.addListener((message) => {
+  if (message.darkModeEnabled === true) applyDarkMode();
+  else if (message.darkModeEnabled === false) removeDarkMode();
+});
+
 chrome.storage.sync.get("darkModeEnabled", (data) => {
-  if (data.darkModeEnabled) {
-    applyDarkMode();
+  if (data.darkModeEnabled) applyDarkMode();
+  else removeDarkMode();
+});
+
+chrome.storage.onChanged.addListener((changes) => {
+  if (changes.darkModeEnabled) {
+    const enabled = changes.darkModeEnabled.newValue;
+    enabled ? applyDarkMode() : removeDarkMode();
   }
 });
