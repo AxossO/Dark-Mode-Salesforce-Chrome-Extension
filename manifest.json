@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Salesforce Dark Mode",
-  "version": "0.2",
+  "version": "0.3",
   "description": "Applies dark mode To Salesforce Lightning Experience ",
   "permissions": ["storage", "activeTab"],
   "host_permissions": ["https://shahidmbc.lightning.force.com/*"],
