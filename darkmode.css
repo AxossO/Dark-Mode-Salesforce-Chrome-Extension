@@ -1,4 +1,25 @@
 /* Main */
+.dm-root {
+  --dm-bg: #121212;
+  --dm-surface: #1c1c1c;
+  --dm-muted: #343434;
+  --dm-fg: #e6e6e6;
+  --dm-accent: #0064ff;
+}
+
+html.darkmode {
+  background: var(--dm-bg) !important;
+  color: var(--dm-fg) !important;
+  color-scheme: dark !important;
+}
+
+html.darkmode img,
+html.darkmode video,
+html.darkmode canvas {
+  filter: none !important;
+  background-color: transparent !important;
+}
+
 .darkmode .slds-utility-bar,
 .darkmode .slds-table_header-fixed thead th div,
 .darkmode .slds-table--header-fixed thead th div,
@@ -59,9 +80,9 @@
 .darkmode .onesetupSetupFlow > .content,
 .darkmode .slds-panel__header,.darkmode .panelBodyWrapper,
 .darkmode .panelBody,
-.darkmode .slds-filters__item,
+.darkmode .slds-filters__item,.darkmode .display-wrapper,.darkmode .forceSearchInputLookupDesktopActionItem:hover,.darkmode .forceSearchInputLookupDesktopActionItem.highlighted ,
 /* .darkmode .oneUtilityBarItem .utilityBarButton, */
-.darkmode .onesetupSetupFlow .slds-spinner_container,.darkmode .modal-body,.darkmode .slds-popover__footer,
+.darkmode .onesetupSetupFlow .slds-spinner_container,.darkmode .modal-body,.darkmode .slds-popover__footer,.darkmode .forceSearchInputLookupDesktop .uiInput--lookup.lookup__menu,.darkmode .forceSearchInputLookupDesktop .uiInput--lookup .lookup__menu,
 .darkmode .slds-modal__header,.darkmode .runtime_service_liveagentConversationLog,.darkmode .slds-textarea,.darkmode .slds-popover,.darkmode .quicktext-message-preview textarea,
 .darkmode .forceMultiAddUsingLVM .multiAddWrapper .headerRegion, .darkmode .slds-wrap .slds-rich-text-area__content, .darkmode .runtime_service_liveagentChatBody .slds-rich-text-area__content,.darkmode .forceSearchInputLookupDesktop .lookup__list.visible {
   background-color: #1c1c1c !important;
@@ -112,6 +133,7 @@
   + ul,
 .darkmode .slds-cell-fixed,
 .darkmode .slds-cell-fixed:hover,
+.darkmode .slds-nav-vertical__item:hover,
 .darkmode .slds-modal__footer {
   background-color: #343434 !important;
 }
@@ -271,17 +293,3 @@
   color: white !important;
   background-color: #282828 !important;
 }
-/* .darkmode .slds-path__nav .slds-is-current:first-child:before,
-.darkmode .slds-path__nav .slds-is-current:first-child:after {
-}
-.darkmode .slds-path__nav .slds-is-current:before,
-.slds-path__nav .slds-is-current:after {
-  
-} */
-/* .labell {
-  text-wrap: nowrap;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row-reverse;
-} */

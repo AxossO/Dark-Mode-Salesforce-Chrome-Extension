@@ -33,7 +33,7 @@
   "web_accessible_resources": [
     {
       "resources": ["darkmode.css"],
-      "matches": ["<all_urls>"]
+      "matches": ["https://shahidmbc.lightning.force.com/*"]
     }
   ]
 }
